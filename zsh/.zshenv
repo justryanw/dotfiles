@@ -7,5 +7,3 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
-source $XDG_CONFIG_HOME/nvm/nvm.zsh
-
