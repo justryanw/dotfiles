@@ -14,14 +14,8 @@ Plug 'scrooloose/NERDTree'
 Plug 'jiangmiao/auto-pairs'
 " Themes
 Plug 'morhetz/gruvbox'
-" Status Line
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 " Git Integration
 Plug 'mhinz/vim-signify'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
-Plug 'junegunn/gv.vim'
 
 call plug#end()
 
