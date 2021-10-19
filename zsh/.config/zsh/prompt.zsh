@@ -1,6 +1,3 @@
-autoload -Uz vcs_info
-autoload -U colors && colors
-
 zstyle ':vcs_info:*' enable git
 
 precmd_vcs_info() { vcs_info }

@@ -1,3 +1,4 @@
+source $ZDOTDIR/settings.zsh
 source $ZDOTDIR/prompt.zsh
 source $ZDOTDIR/alias.zsh
 
