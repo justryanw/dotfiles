@@ -2,8 +2,11 @@ font:
   normal:
     family: FiraMono Nerd Font
   size: 16
+
 window:
   padding:
     x: 8
     y: 8
+
+background_opacity: 0.8
 

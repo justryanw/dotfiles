@@ -14,6 +14,7 @@ Plug 'scrooloose/NERDTree'
 Plug 'jiangmiao/auto-pairs'
 " Themes
 Plug 'morhetz/gruvbox'
+Plug 'navarasu/onedark.nvim'
 " Git Integration
 Plug 'mhinz/vim-signify'
 
