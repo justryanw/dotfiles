@@ -1,2 +1,2 @@
-alias clip='xclip -selection c'
+alias clip='pbcopy'
 
