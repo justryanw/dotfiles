@@ -12,7 +12,7 @@ set laststatus=0															" Always display the status line
 set number                                    " Show current line number
 set relativenumber                            " Show relative line numbers
 set noshowmode																" Removes statuses like -- INSERT --
-set timeoutlen=100														" Time to wait for input after leader key
+set timeoutlen=500														" Time to wait for input after leader key
 set clipboard=unnamedplus											" Set to use system clipboard
 set cursorline																" Enable cursor line
 " Set cursor line and column to highlight background
