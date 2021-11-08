@@ -21,8 +21,10 @@ nnoremap <S-TAB> :bprevious<CR>
 
 " Open NERDTree
 nnoremap <Leader>t :NERDTreeToggle<CR>
-" Browse on Github
-nnoremap <Leader>b :GBrowse<CR>
-" See changes
-nnoremap <Leader>c :GV<CR>
+
+" Export markdown to HTML
+autocmd BufRead,BufNewFile *.md nnoremap <Leader>h :!pandoc --standalone % > $(basename % ".md").html<CR><CR>
+
+" Export markdown to PDF
+autocmd BufRead,BufNewFile *.md nnoremap <Leader>p :!pandoc % -o $(basename % ".md").pdf<CR><CR>
 
