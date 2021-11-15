@@ -28,3 +28,6 @@ autocmd BufRead,BufNewFile *.md nnoremap <Leader>h :!pandoc --standalone % > $(b
 " Export markdown to PDF
 autocmd BufRead,BufNewFile *.md nnoremap <Leader>p :!pandoc % -o $(basename % ".md").pdf<CR><CR>
 
+" Run a rust project with cargo
+autocmd BufRead,BufNewFile *.rs nnoremap <Leader>r :!cargo run<CR>
+
