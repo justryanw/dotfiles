@@ -2,8 +2,12 @@
     "editor.lineNumbers": "relative",
     "editor.wordWrap": "on",
     "editor.fontFamily": "'FiraMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "window.zoomLevel": 1,
     "workbench.colorTheme": "One Dark Pro Darker",
     "editor.minimap.enabled": false,
-    "update.mode": "manual"
+    "update.mode": "manual",
+    "terminal.integrated.tabs.enabled": false,
+    "javascript.preferences.importModuleSpecifier": "relative",
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "typescript.preferences.quoteStyle": "single"
 }
