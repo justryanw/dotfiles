@@ -5,5 +5,10 @@
     "window.zoomLevel": 1,
     "workbench.colorTheme": "One Dark Pro Darker",
     "editor.minimap.enabled": false,
-    "update.mode": "manual"
+    "update.mode": "manual",
+    "files.autoSave": "afterDelay",
+    "rust-analyzer.inlayHints.enable": false,
+    "rust-analyzer.lens.implementations": false,
+    "explorer.confirmDelete": false,
+    "terminal.integrated.tabs.enabled": false
 }
