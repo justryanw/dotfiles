@@ -2,7 +2,6 @@
     "editor.lineNumbers": "relative",
     "editor.wordWrap": "on",
     "editor.fontFamily": "'FiraMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "window.zoomLevel": 1,
     "workbench.colorTheme": "One Dark Pro Darker",
     "editor.minimap.enabled": false,
     "update.mode": "manual",
