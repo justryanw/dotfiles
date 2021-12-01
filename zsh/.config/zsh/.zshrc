@@ -1,6 +1,7 @@
-source $ZDOTDIR/settings.zsh
-source $ZDOTDIR/prompt.zsh
-source $ZDOTDIR/alias.zsh
+autoload -U colors && colors
+KEYTIMEOUT=5
 
-source $XDG_CONFIG_HOME/nvm/nvm.zsh
-
+for file in $ZDOTDIR/*.zsh; do
+    echo "Loading $file"
+    source "$file"
+done
