@@ -1,4 +1,4 @@
-autoload -Uz add-zsh-hook zcs_info
+autoload -Uz add-zsh-hook vcs_info
 setopt prompt_subst
 
 zstyle ':vcs_info:*' check-for-changes true
@@ -24,4 +24,3 @@ PROMPT='%F{blue}[%F{white}%n%F{red}@%F{white}%m%F{blue}] ' # [user@host]
 PROMPT+='%F{green}➜ %F{cyan}%1~ ' # ➜ directory
 PROMPT+='%F{red}${vcs_info_msg_0_} ' # (git info)
 PROMPT+='${NEWLINE}%F{cyan}>%f ' # > 
-
