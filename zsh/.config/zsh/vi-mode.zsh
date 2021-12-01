@@ -2,8 +2,7 @@ bindkey -M menuselect '\e' vi-insert
 bindkey "^H" backward-delete-char
 bindkey "^?" backward-delete-char
 
-# Change cursor shape for different vi modes.
-function zle-keymap-select {
+function zle-keymap-select() {
   if [[ ${KEYMAP} == vicmd ]] ||
      [[ $1 = 'block' ]]; then
     echo -ne '\e[1 q'
@@ -13,12 +12,20 @@ function zle-keymap-select {
        [[ $1 = 'beam' ]]; then
     echo -ne '\e[5 q'
   fi
+  zle reset-prompt
+  zle -R
 }
 zle -N zle-keymap-select
+
 zle-line-init() {
-    zle -K viins # initiate `vi insert` as keymap
+    zle -K viins
     echo -ne "\e[5 q"
 }
 zle -N zle-line-init
-echo -ne '\e[5 q' # Use beam shape cursor on startup.
-preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+
+function vi_mode_prompt_info() {
+  echo "${${KEYMAP/vicmd/[% NORMAL]%}/(main|viins)/[% INSERT]%}"
+}
+
+RPS1='$(vi_mode_prompt_info)'
+RPS2=$RPS1
