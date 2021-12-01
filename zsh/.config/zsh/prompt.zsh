@@ -4,7 +4,7 @@ setopt prompt_subst
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' unstagedstr 'M' # Symbol for unstaged changes
 zstyle ':vcs_info:*' stagedstr 'S' # Symbol for staged changes
-zstyle ':vcs_info:git:*' formats "%{$fg[blue]%}(%{$fg[red]%}%m%u%c%{$fg[yellow]%} %{$fg[magenta]%} %b%{$fg[blue]%})"
+zstyle ':vcs_info:git:*' formats "%{$fg[blue]%}(%{$fg[red]%}%m%u%c%{$fg[yellow]%} %{$fg[magenta]%} %b%{$fg[blue]%} )"
 zstyle ':vcs_info:git:*' actionformats '(%b|%a%u%c)'
 zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
 
