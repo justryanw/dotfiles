@@ -7,6 +7,3 @@ export ZDOTDIR=$XDG_CONFIG_HOME/zsh
 export EDITOR="nvim"
 export VISUAL="nvim"
 
-export PATH=$HOME/.cargo/bin:$PATH
-
-. "$HOME/.cargo/env"
