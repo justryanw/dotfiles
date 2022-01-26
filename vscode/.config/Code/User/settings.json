@@ -12,5 +12,7 @@
     "javascript.preferences.quoteStyle": "single",
     "typescript.preferences.importModuleSpecifier": "relative",
     "typescript.preferences.quoteStyle": "single",
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": true
 }
