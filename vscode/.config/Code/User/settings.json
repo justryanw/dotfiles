@@ -8,11 +8,9 @@
     "rust-analyzer.inlayHints.enable": false,
     "rust-analyzer.lens.implementations": false,
     "explorer.confirmDelete": false,
-    "terminal.integrated.tabs.enabled": false,
     "javascript.preferences.importModuleSpecifier": "relative",
     "javascript.preferences.quoteStyle": "single",
     "typescript.preferences.importModuleSpecifier": "relative",
     "typescript.preferences.quoteStyle": "single",
-    "files.autoSave": "afterDelay",
-    "window.zoomLevel": 1
+    "files.autoSave": "afterDelay"
 }
