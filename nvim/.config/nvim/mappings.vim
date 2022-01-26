@@ -15,9 +15,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" Tab will move between text buffers and shift tab to go backwards
-nnoremap <TAB> :bnext<CR>
-nnoremap <S-TAB> :bprevious<CR>
+" Tab will move between tabs and shift tab to go backwards
+nnoremap <TAB> :tabn<CR>
+nnoremap <S-TAB> :tabp<CR>
 
 " Open NERDTree
 nnoremap <Leader>t :NERDTreeToggle<CR>
@@ -30,4 +30,7 @@ autocmd BufRead,BufNewFile *.md nnoremap <Leader>p :!pandoc % -o $(basename % ".
 
 " Run a rust project with cargo
 autocmd BufRead,BufNewFile *.rs nnoremap <Leader>r :!cargo run<CR>
+
+" Save and run a makefile
+autocmd BufRead,BufNewFile * nnoremap <Leader>m :w<CR><bar>:!make<CR>
 
