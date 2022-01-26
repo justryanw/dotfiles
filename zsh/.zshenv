@@ -10,3 +10,6 @@ export VISUAL="nvim"
 export PATH=$HOME/.cargo/bin:$PATH
 
 . "$HOME/.cargo/env"
+
+export TERM=linux
+
