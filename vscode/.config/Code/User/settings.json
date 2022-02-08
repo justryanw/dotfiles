@@ -12,7 +12,12 @@
     "javascript.preferences.quoteStyle": "single",
     "typescript.preferences.importModuleSpecifier": "relative",
     "typescript.preferences.quoteStyle": "single",
-    "files.autoSave": "afterDelay",
     "editor.cursorBlinking": "phase",
-    "editor.cursorSmoothCaretAnimation": true
+    "editor.cursorSmoothCaretAnimation": true,
+    "eslint.format.enable": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.tabs.enabled": false
 }
