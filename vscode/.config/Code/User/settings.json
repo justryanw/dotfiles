@@ -19,5 +19,10 @@
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     },
     "files.autoSave": "afterDelay",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "eslint.alwaysShowStatus": true,
+    "editor.renderWhitespace": "all",
     "terminal.integrated.tabs.enabled": false
 }

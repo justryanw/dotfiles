@@ -1,6 +1,7 @@
-alias clip='pbcopy'
-alias paru='paru --limit 5'
+alias copy='pbcopy'
+alias paste='pbpaste'
 alias usage='du -hxd 1 | sort -h'
-alias compose='docker-compose'
-alias alacritty='WAYLAND_DISPLAY= alacritty'
+alias update='brew upgrade'
+alias install='brew install'
+alias remove='brew remove'
 

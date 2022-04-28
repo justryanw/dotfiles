@@ -3,3 +3,6 @@
 	email = ryan.walker@tombola.com
 [init]
 	defaultBranch = master
+[alias]
+	acm = !git add -A && git commit -m
+	publish = push -u origin HEAD
