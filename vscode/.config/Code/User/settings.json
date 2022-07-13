@@ -24,5 +24,7 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "eslint.alwaysShowStatus": true,
     "editor.renderWhitespace": "all",
-    "terminal.integrated.tabs.enabled": false
+    "git.enableSmartCommit": true,
+    "rust-analyzer.hover.actions.references.enable": true,
+    "rust-analyzer.lens.enable": false
 }

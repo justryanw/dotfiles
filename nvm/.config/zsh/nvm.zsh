@@ -6,10 +6,26 @@ lazynvm() {
   if [ -f "$NVM_DIR/bash_completion" ]; then
     [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
   fi
-  load-nvmrc
+
+  load_package_version
 }
 
-load-nvmrc() {
+load_package_version() {
+  local node_version="$(nvm version)"
+
+  [ -r package.json ] || { echo "Can't find package.json file"; return 1 }
+  local package=$(jq -r .engines.node package.json)
+
+  [ -n "$package" ] || { echo "Can't find a node version within package.json"; return 1 }
+  local package_node_version=$(nvm version $package)
+
+  [ "$package_node_version" != "N/A" ] || { echo "Failed to parse '$package' into a node version"; return 1 }
+  [ "$package_node_version" != "$node_version" ] || return 1
+  echo "Node versions don't match, installing correct version..."
+  nvm i $(pacakge_node_version)
+}
+
+load_nvmrc() {
   local node_version="$(nvm version)"
   local nvmrc_path="$(nvm_find_nvmrc)"
 
