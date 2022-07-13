@@ -20,9 +20,9 @@ load_package_version() {
   local package_node_version=$(nvm version $package)
 
   [ "$package_node_version" != "N/A" ] || { echo "Failed to parse '$package' into a node version"; return 1 }
-  [ "$package_node_version" != "$node_version" ] || return 1
-  echo "Node versions don't match, installing correct version..."
-  nvm i $(pacakge_node_version)
+  [ "$package_node_version" != "$node_version" ] || { echo "Using correct node version $package_node_version"; return 1 }
+  echo "Node versions don't match, switching to $package_node_version"
+  nvm i $package_node_version
 }
 
 load_nvmrc() {
