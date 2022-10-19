@@ -4,3 +4,5 @@ KEYTIMEOUT=5
 for file in $ZDOTDIR/*.zsh; do
     source "$file"
 done
+
+eval "$(starship init zsh)"
