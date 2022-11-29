@@ -1,3 +1,6 @@
+[username]
+show_always = true
+
 [aws]
 symbol = "  "
 
