@@ -2,8 +2,8 @@ autoload -Uz compinit
 compinit
 _comp_options+=(globdots)
 
-#zstyle ':completion:*' use-cache on
-#zstyle ':completion:*' cache-path "$XDG_CACHE_HOME/zsh/.zcompcache"
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path "$XDG_CACHE_HOME/zsh/.zcompcache"
 
 zstyle ':completion:*' menu select
 zstyle ':completion:*:*:*:*:descriptions' format '%F{green}-- %d --%f'
