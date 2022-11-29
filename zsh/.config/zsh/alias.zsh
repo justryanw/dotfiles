@@ -1,6 +1,9 @@
-alias a='nvim ~/.config/zsh/alias.zsh'
-alias la='cat ~/.config/zsh/alias.zsh'
+# Meta
+alias a='$EDITOR ~/.config/zsh/alias.zsh'
+alias al='cat ~/.config/zsh/alias.zsh'
 
+# Shortcuts
+alias la='ls -A'
 alias usage='du -ahxr | sort -hr'
 alias rsync='rsync -ah --info=progress2 --no-i-r'
 alias copy='pbcopy'

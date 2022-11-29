@@ -4,15 +4,14 @@ export XDG_DATA_HOME=$HOME/.local/share
 
 export ZDOTDIR=$XDG_CONFIG_HOME/zsh
 
-export EDITOR="nvim"
-export VISUAL="nvim"
+export EDITOR="hx"
+export VISUAL="hx"
 
 export PATH=$HOME/.cargo/bin:$PATH
+. "$HOME/.cargo/env"
 
 # MacPorts
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-
-. "$HOME/.cargo/env"
 
 export TERM=linux
 
