@@ -8,10 +8,10 @@ export EDITOR="hx"
 export VISUAL="hx"
 
 export PATH=$HOME/.cargo/bin:$PATH
-. "$HOME/.cargo/env"
 
 # MacPorts
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 export TERM=linux
 
+. "$HOME/.cargo/env"

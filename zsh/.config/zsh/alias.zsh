@@ -1,11 +1,10 @@
 # Meta
 alias a='$EDITOR ~/.config/zsh/alias.zsh'
-alias al='cat ~/.config/zsh/alias.zsh'
+alias al='less ~/.config/zsh/alias.zsh'
 
 # Shortcuts
 alias la='ls -A'
 alias usage='du -ahxr | sort -hr'
-alias rsync='rsync -ah --info=progress2 --no-i-r'
 alias copy='pbcopy'
 alias paste='pbpaste'
 
@@ -32,3 +31,7 @@ alias ygg='sudo yggdrasilctl'
 alias peers='sudo yggdrasilctl getPeers'
 alias self='sudo yggdrasilctl getSelf'
 
+# Bingo
+alias copyutils='/opt/local/bin/rsync -ah --delete --info=progress2 ../bingo-client/packages/pixi-utils/ ./node_modules/@bingo-client/pixi-utils'
+alias buildutils='cd ../bingo-client && npm run build && cd - && copyutils && serve'
+alias copygame="rsync -ah --exclude 'node_modules' --exclude 'dist' --exclude '.git'"

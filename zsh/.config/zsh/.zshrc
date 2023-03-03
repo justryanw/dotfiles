@@ -10,8 +10,8 @@ eval "$(starship init zsh)"
 
 # Autosuggestions
 source /opt/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-bindkey '^ ' autosuggest-accept
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#505050"
+bindkey '^ ' autosuggest-accept
 
 # Syntax Highligh
 source /opt/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
