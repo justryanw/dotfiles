@@ -9,9 +9,11 @@ export VISUAL="hx"
 
 export PATH=$HOME/.cargo/bin:$PATH
 
-# MacPorts
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-
 export TERM=linux
 
 . "$HOME/.cargo/env"
+
+# Nix
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
